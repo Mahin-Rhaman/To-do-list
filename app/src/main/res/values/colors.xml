@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<color name="themes">[{"name":"lightCode"}]</color>
+  <color name="colors">[{"color":"#cc1b1f31","lightCode":"#cc1b1f31","displayName":"onPrimary","name":"onPrimary","type":"SCHEME"},{"color":"#d6d6d6","lightCode":"#d6d6d6","displayName":"onPrimaryContainer","name":"onPrimaryContainer","type":"SCHEME"},{"color":"#0cfd6b22","lightCode":"#0cfd6b22","displayName":"secondaryContainer","name":"secondaryContainer","type":"SCHEME"},{"color":"#20b9fc","lightCode":"#20b9fc","displayName":"primary","name":"primary","type":"SCHEME"},{"color":"#f9ece9","lightCode":"#f9ece9","displayName":"deep_orange_50","name":"deep_orange_50","type":"CONSTANT"},{"color":"#22b07d","lightCode":"#22b07d","displayName":"teal_400","name":"teal_400","type":"CONSTANT"},{"color":"#f9f9f9","lightCode":"#f9f9f9","displayName":"gray_50","name":"gray_50","type":"CONSTANT"},{"color":"#ffffff","lightCode":"#ffffff","displayName":"white_A700","name":"white_A700","type":"CONSTANT"},{"color":"#0cfd2222","lightCode":"#0cfd2222","displayName":"red_A400_0c","name":"red_A400_0c","type":"CONSTANT"},{"color":"#f9faff","lightCode":"#f9faff","displayName":"gray_50_01","name":"gray_50_01","type":"CONSTANT"},{"color":"#f4fbf8","lightCode":"#f4fbf8","displayName":"gray_50_02","name":"gray_50_02","type":"CONSTANT"},{"color":"#5835fb","lightCode":"#5835fb","displayName":"deep_purple_A400","name":"deep_purple_A400","type":"CONSTANT"},{"color":"#f7f5ff","lightCode":"#f7f5ff","displayName":"gray_50_03","name":"gray_50_03","type":"CONSTANT"},{"color":"#66fd2121","lightCode":"#66fd2121","displayName":"red_A400_66","name":"red_A400_66","type":"CONSTANT"},{"color":"#000000","lightCode":"#000000","displayName":"black_900","name":"black_900","type":"CONSTANT"}]</color>
+<color name="ic_launcher_background">#FFFFFF</color>
+</resources>

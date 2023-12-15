@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginOrSignupVM" type="com.todolist.app.modules.loginorsignup.data.viewmodel.LoginOrSignupVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearLoginOrSignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle{&quot;name&quot;:&quot;gray_50_01&quot;}">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarAppBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearThirtyFour"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_25pxv"
+            android:paddingEnd="@dimen/_32pxh"
+            android:paddingStart="@dimen/_32pxh" android:paddingTop="@dimen/_25pxv">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPageHeader"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/txtWelcometoourcommunity"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtWelcometoourcommunity}"
+                    style="@style/txtPoppinsbold34" tools:text="@string/msg_welcome_to_our_community"/>
+                <TextView android:id="@+id/txtOurCommunityIs"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtOurCommunityIs}"
+                    style="@style/txtPoppinsregular12" tools:text="@string/msg_our_community_is"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageLogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_105pxh"
+                android:layout_width="@dimen/_117pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_logo_gray_50_01"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_logo_gray_50_01"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGetInThrough"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{loginOrSignupVM.loginOrSignupModel.txtGetInThrough}"
+                style="@style/txtPoppinssemibold18" tools:text="@string/lbl_get_in_through"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_primary_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnSignUp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;white_A700&quot;}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="bold" tools:text="@string/lbl_sign_up"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_deep_orange_50_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnLogin"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;secondaryContainer&quot;,&quot;opacity&quot;:1}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="bold" tools:text="@string/lbl_login"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

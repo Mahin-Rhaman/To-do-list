@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homePageVM" type="com.todolist.app.modules.homepage.data.viewmodel.HomePageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAdacana"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle{&quot;name&quot;:&quot;white_A700&quot;}">
+        <ImageView android:id="@+id/imageLogo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_325pxh"
+            android:layout_width="@dimen/_238pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_logo}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_logo"/>
+    </LinearLayout>
+</layout>

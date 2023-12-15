@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="languageVM" type="com.todolist.app.modules.language.data.viewmodel.LanguageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearLanguage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle{&quot;name&quot;:&quot;white_A700&quot;}">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarAppBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearThirtyTwo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_31pxh"
+            android:paddingStart="@dimen/_31pxh" android:paddingTop="@dimen/_66pxv">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPageHeader"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_1pxh" android:paddingStart="@dimen/_1pxh">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_14pxh"
+                    android:singleLine="true"
+                    android:text="@{languageVM.languageModel.txtLanguage}"
+                    style="@style/txtPoppinssemibold28" tools:text="@string/lbl_language"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYourSettingsSo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:singleLine="true"
+                    android:text="@{languageVM.languageModel.txtYourSettingsSo}"
+                    style="@style/txtPoppinsmedium12" tools:text="@string/msg_your_settings_so"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_deep_orange_50_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnIndonesian"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_indonesian2"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;secondaryContainer&quot;,&quot;opacity&quot;:1}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12pxh"
+                android:textStyle="bold" tools:text="@string/lbl_indonesian2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_gray_50_03_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnEnglish"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_english"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;deep_purple_A400&quot;}"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12pxh"
+                android:textStyle="bold" tools:text="@string/lbl_english"/>
+            <FrameLayout android:id="@+id/frameSpacer"
+                android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_primary_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnSave"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_18pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_save"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;white_A700&quot;}"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_16pxh"
+                android:textStyle="bold" tools:text="@string/lbl_save"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
