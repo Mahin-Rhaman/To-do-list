@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingsVM" type="com.todolist.app.modules.settings.data.viewmodel.SettingsVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSettings"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle{&quot;name&quot;:&quot;white_A700&quot;}">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarAppBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearTwentyNine"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_32pxh"
+            android:paddingStart="@dimen/_32pxh" android:paddingTop="@dimen/_74pxv">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearSettingOption"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSettings"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_14pxh"
+                    android:singleLine="true"
+                    android:text="@{settingsVM.settingsModel.txtSettings}"
+                    style="@style/txtPoppinssemibold28" tools:text="@string/lbl_settings"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYourSettingsSo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:singleLine="true"
+                    android:text="@{settingsVM.settingsModel.txtYourSettingsSo}"
+                    style="@style/txtPoppinsmedium12" tools:text="@string/msg_your_settings_so"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearPersonality"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_20pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_20pxv" style="@style/groupStyle{&quot;name&quot;:&quot;gray_50&quot;}cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPersonality"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{settingsVM.settingsModel.txtPersonality}"
+                    style="@style/txtPoppinsmedium12_2" tools:text="@string/lbl_personality"/>
+                <ImageView android:id="@+id/imageArrowRight"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_width="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_right"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearLanguage"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_19pxv" style="@style/groupStyle{&quot;name&quot;:&quot;gray_50&quot;}cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{settingsVM.settingsModel.txtLanguage}"
+                    style="@style/txtPoppinsmedium12_2" tools:text="@string/lbl_language"/>
+                <ImageView android:id="@+id/imageArrowRight1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_width="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_right"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearTermsAndConditions"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_20pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_20pxv" style="@style/groupStyle{&quot;name&quot;:&quot;gray_50&quot;}cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTermAndCondition"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{settingsVM.settingsModel.txtTermAndCondition}"
+                    style="@style/txtPoppinsmedium12_2" tools:text="@string/msg_terms_and_conditions"/>
+                <ImageView android:id="@+id/imageArrowRight2"
+                    android:layout_height="@dimen/_6pxh"
+                    android:layout_width="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_right"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_right"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameSpacer"
+                android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_name_red_a400_0c_border_name_red_a400_66_radius_14"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center" android:id="@+id/btnLogOut"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_18pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_log_out"
+                android:textAllCaps="false"
+                android:textColor="@color/{&quot;name&quot;:&quot;red_A400_0c&quot;,&quot;opacity&quot;:0.56}"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_16pxh"
+                android:textStyle="bold" tools:text="@string/lbl_log_out"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
